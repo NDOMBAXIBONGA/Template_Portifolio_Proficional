@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Silva - Desenvolvedor Full Stack & Designer UI/UX</title>
+    <meta name="description" content="Portfólio profissional de João Silva, desenvolvedor Full Stack especializado em JavaScript, React e Node.js. Confira meus projetos e entre em contato.">
+    <meta name="keywords" content="desenvolvedor, full stack, JavaScript, React, Node.js, portfolio, UI/UX">
+    <meta name="author" content="João Silva">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="João Silva - Desenvolvedor Full Stack">
+    <meta property="og:description" content="Portfólio profissional de João Silva, desenvolvedor Full Stack especializado em JavaScript, React e Node.js.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://joaosilva.dev">
+    
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "João Silva",
+      "jobTitle": "Desenvolvedor Full Stack",
+      "url": "https://joaosilva.dev",
+      "sameAs": [
+        "https://www.linkedin.com/in/joaosilva",
+        "https://github.com/joaosilva"
+      ]
+    }
+    </script>
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <i class="fas fa-code"></i>
+                    João<span>Silva</span>
+                </a>
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Transformando Ideias em Experiências Digitais</h1>
+                <p>Desenvolvedor Full Stack & Designer UI/UX com paixão por criar soluções inovadoras que unem tecnologia e design para resultados excepcionais.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn">
+                        <i class="fas fa-rocket"></i>
+                        Ver Projetos
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-paper-plane"></i>
+                        Entrar em Contato
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Sobre Mim</h2>
+                <p>Conheça minha jornada, habilidades e paixão pelo desenvolvimento de software</p>
+            </div>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="img/user.png" alt="João Silva - Desenvolvedor">
+                </div>
+                <div class="about-text">
+                    <h3>Desenvolvedor Full Stack & Designer UI/UX</h3>
+                    <p>Com mais de 5 anos de experiência no desenvolvimento web, especializei-me em criar soluções digitais completas, desde a concepção até a implementação. Minha paixão é transformar ideias em produtos digitais funcionais e visualmente atraentes.</p>
+                    <p>Trabalho com tecnologias modernas como JavaScript, React, Node.js, e tenho experiência sólida em design de interfaces e experiência do usuário. Acredito que a melhor solução técnica é aquela que equilibra performance, usabilidade e estética.</p>
+                    
+                    <div class="skills">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">React</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">UI/UX Design</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meus Serviços</h2>
+                <p>Soluções completas para suas necessidades digitais</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Criação de sites e aplicações web responsivas, otimizadas e com as melhores práticas de desenvolvimento. Foco em performance, segurança e escalabilidade.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Desenvolvimento Mobile</h3>
+                    <p>Desenvolvimento de aplicativos móveis para iOS e Android usando React Native e tecnologias híbridas. Experiência nativa e multiplataforma.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Design de interfaces intuitivas e experiências de usuário excepcionais para produtos digitais. Pesquisa de usuário, prototipagem e design system.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>Projetos Recentes</h2>
+                <p>Alguns dos meus trabalhos mais recentes e desafiadores</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="E-commerce Platform">
+                    </div>
+                    <div class="project-info">
+                        <h3>Plataforma E-commerce</h3>
+                        <p>Desenvolvimento completo de uma plataforma de e-commerce com carrinho de compras, pagamentos e painel administrativo.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">Stripe</span>
+                        </div>
+                        <a href="#" class="btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            Ver Detalhes
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Task Management App">
+                    </div>
+                    <div class="project-info">
+                        <h3>App de Gestão de Tarefas</h3>
+                        <p>Aplicativo web para gestão de projetos e tarefas com funcionalidades de colaboração em tempo real.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Vue.js</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">Sass</span>
+                            <span class="project-tag">PWA</span>
+                        </div>
+                        <a href="#" class="btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            Ver Detalhes
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80" alt="Analytics Dashboard">
+                    </div>
+                    <div class="project-info">
+                        <h3>Dashboard Analytics</h3>
+                        <p>Dashboard interativo para visualização de dados e métricas de negócio com gráficos e relatórios personalizáveis.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">D3.js</span>
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">API REST</span>
+                        </div>
+                        <a href="#" class="btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            Ver Detalhes
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Entre em Contato</h2>
+                <p>Vamos conversar sobre seu próximo projeto</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Vamos Trabalhar Juntos</h3>
+                    <p>Estou sempre aberto a discutir novos projetos, oportunidades de colaboração ou simplesmente conversar sobre tecnologia e design. Entre em contato e vamos transformar suas ideias em realidade!</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Localização</h4>
+                            <p>Angola/Huila/Lubango/Bairro Tchioco</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>ndombaxibonga@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Telefone</h4>
+                            <p>+244 932 400 204</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="mailto:ndombaxibonga@gmail.com" class="contact-link">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        </a>
+                        <a href="https://wa.me/244932400204" class="contact-link">
+                            <i class="fab fa-whatsapp contact-icon"></i>
+                            <span class="contact-text">WhatsApp</span>
+                            <span class="contact-description">Resposta rápida</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ndombaxi-mantuidi-de-almeida-bonga-635158335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="contact-link">
+                            <i class="fab fa-linkedin contact-icon"></i>
+                            <span class="contact-text">LinkedIn</span>
+                            <span class="contact-description">Conecte-se profissionalmente</span>
+                        </a>
+                        <a href="https://github.com/NDOMBAXIBONGA" class="contact-link">
+                            <i class="fab fa-github contact-icon"></i>
+                            <span class="contact-text">GitHub</span>
+                            <span class="contact-description">Veja meus projetos</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Seu Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Assunto" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Sua Mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Envia Mensagem
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 N.M.A.B Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
